@@ -1,0 +1,38 @@
+{
+  "name": "ui-event-performance",
+  "version": "0.1.0",
+  "description": "Optimised way to subscribe to browser DOM UI Events using requestAnimationFrame.",
+  "keywords": [
+    "resize",
+    "scroll",
+    "requestAnimationFrame",
+    "CustomEvent"
+  ],
+  "main": "bundle.js",
+  "files": [
+    "LICENCE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c --environment BUILD:production",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "custom-event-polyfill": "^1.0.6"
+  },
+  "devDependencies": {
+    "rollup": "^1.2.3",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-node-resolve": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nghiepit/ui-event-performance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nghiepit/ui-event-performance/issues"
+  },
+  "homepage": "https://github.com/nghiepit/ui-event-performance",
+  "author": "Nghiệp <me@nghiepit.pro>",
+  "license": "MIT"
+}
