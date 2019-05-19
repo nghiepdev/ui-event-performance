@@ -18,12 +18,12 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "custom-event-polyfill": "^1.0.6"
+    "custom-event-polyfill": "^1.0.7"
   },
   "devDependencies": {
-    "rollup": "^1.2.3",
-    "rollup-plugin-commonjs": "^9.2.1",
-    "rollup-plugin-node-resolve": "^4.0.1"
+    "rollup": "^1.12.3",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.0"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,6 @@
     "url": "https://github.com/nghiepit/ui-event-performance/issues"
   },
   "homepage": "https://github.com/nghiepit/ui-event-performance",
-  "author": "Nghiệp <me@nghiepit.pro>",
+  "author": "Nghiep <me@nghiepit.dev>",
   "license": "MIT"
 }

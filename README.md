@@ -1,7 +1,7 @@
 # ui-event-performance
 
 [![NPM version](https://img.shields.io/npm/v/ui-event-performance.svg)](https://www.npmjs.com/package/ui-event-performance)
-[![NPM monthly download](https://img.shields.io/npm/dm/ui-event-performance.svg)](https://www.npmjs.com/package/ui-event-performance)
+[![NPM monthly download](https://img.shields.io/npm/dy/ui-event-performance.svg)](https://www.npmjs.com/package/ui-event-performance)
 
 > Optimised way to subscribe to browser DOM UI Events using requestAnimationFrame.
 
@@ -28,7 +28,7 @@ window.addEventListener('optimizedResize', () => {
 });
 
 // with DOM element listener
-const wrapperElement = document.querySelector('my-wrapper');
+const wrapperElement = document.querySelector('#my-wrapper');
 const handleScroll = () => {
   console.log('Wrapper is scrolling');
 };
@@ -41,4 +41,4 @@ wrapperElement.removeEventListener('optimizedScroll', handleScroll);
 
 ## License
 
-MIT © [Nghiep](https://nghiepit.pro)
+MIT © [Nghiep](https://nghiepit.dev)
