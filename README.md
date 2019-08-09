@@ -1,7 +1,7 @@
 # ui-event-performance
 
 [![NPM version](https://img.shields.io/npm/v/ui-event-performance.svg)](https://www.npmjs.com/package/ui-event-performance)
-[![NPM monthly download](https://img.shields.io/npm/dy/ui-event-performance.svg)](https://www.npmjs.com/package/ui-event-performance)
+[![NPM yearly download](https://img.shields.io/npm/dy/ui-event-performance.svg)](https://www.npmjs.com/package/ui-event-performance)
 
 > Optimised way to subscribe to browser DOM UI Events using requestAnimationFrame.
 

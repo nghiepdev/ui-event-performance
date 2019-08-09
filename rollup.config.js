@@ -5,7 +5,7 @@ module.exports = {
   input: 'index.js',
   output: {
     file: 'bundle.js',
-    format: 'umd',
+    format: 'cjs',
     name: 'ui-event-performance',
   },
   plugins: [resolve(), commonjs()],
