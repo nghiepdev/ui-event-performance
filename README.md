@@ -41,4 +41,4 @@ wrapperElement.removeEventListener('optimizedScroll', handleScroll);
 
 ## License
 
-MIT © [Nghiep](https://nghiepit.dev)
+MIT
