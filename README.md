@@ -18,8 +18,8 @@ yarn add ui-event-performance
 
 ## Usage
 
-```js
-import subscribeEvent from 'ui-event-performance';
+```ts
+import {subscribeEvent} from 'ui-event-performance';
 
 // window event listener
 subscribeEvent('resize', 'optimizedResize');
