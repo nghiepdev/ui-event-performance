@@ -27,4 +27,8 @@ export function subscribeEvent(
   };
 
   obj.addEventListener(type, execute);
+
+  return () => {
+    obj.removeEventListener(type, execute);
+  };
 }

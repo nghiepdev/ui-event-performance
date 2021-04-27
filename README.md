@@ -1,7 +1,7 @@
 # ui-event-performance
 
 [![NPM version](https://img.shields.io/npm/v/ui-event-performance.svg)](https://www.npmjs.com/package/ui-event-performance)
-[![NPM yearly download](https://img.shields.io/npm/dy/ui-event-performance.svg)](https://www.npmjs.com/package/ui-event-performance)
+[![NPM monthly download](https://img.shields.io/npm/dm/ui-event-performance.svg)](https://www.npmjs.com/package/ui-event-performance)
 
 > Optimised way to subscribe to browser DOM UI Events using requestAnimationFrame.
 
@@ -22,7 +22,7 @@ yarn add ui-event-performance
 import {subscribeEvent} from 'ui-event-performance';
 
 // window event listener
-subscribeEvent('resize', 'optimizedResize');
+const unsubscribeEvent = subscribeEvent('resize', 'optimizedResize');
 window.addEventListener('optimizedResize', () => {
   console.log('Resource conscious resize callback!');
 });
@@ -32,11 +32,18 @@ const wrapperElement = document.querySelector('#my-wrapper');
 const handleScroll = () => {
   console.log('Wrapper is scrolling');
 };
-subscribeEvent('scroll', 'optimizedScroll', wrapperElement);
+const unsubscribeEvent = subscribeEvent(
+  'scroll',
+  'optimizedScroll',
+  wrapperElement
+);
 wrapperElement.addEventListener('optimizedScroll', handleScroll);
 
 // remove event listener
 wrapperElement.removeEventListener('optimizedScroll', handleScroll);
+
+// unsubscribe event
+unsubscribeEvent();
 ```
 
 ## License
