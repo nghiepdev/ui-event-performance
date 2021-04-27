@@ -1,6 +1,6 @@
 {
   "name": "ui-event-performance",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Optimised way to subscribe to browser DOM UI Events using requestAnimationFrame.",
   "keywords": [
     "resize",
